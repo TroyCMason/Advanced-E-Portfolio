@@ -86,20 +86,51 @@
       </p>
       <div class="modal__languages">
         <figure class="modal__language">
-          <img src="./assets/free-html5-2474813-2056052.png">
+          <img class="modal__language--img" src="./assets/free-html5-2474813-2056052.png">
+          <span class="language__name">HTML</span>
         </figure>
         <figure class="modal__language">
-          <img src="./assets/css-solid.png">
+        <img class="modal__language--img" src="./assets/css-solid.png">
+        <span class="language__name">CSS</span>
+      </figure>
+        <figure class="modal__language">
+          <img class="modal__language--img" src="./assets/javascript-icon-2048x2048-dc9qqnwh.png">
+          <span class="language__name">JavaScript</span>
         </figure>
         <figure class="modal__language">
-          <img src="./assets/javascript-icon-2048x2048-dc9qqnwh.png">
-        </figure>
-        <figure class="modal__language">
-          <img src="/assets/typescript_logo_icon_249332.png">
+          <img class="modal__language--img" src="/assets/typescript_logo_icon_249332.png">
+          <span class="language__name">TypeScript</span>
         </figure>
       </div>
     </div>
-    <div class="modal__half modal__contact">Let's have a chat!</div>
+    <div class="modal__half modal__contact">
+      <h3 class="modal__title modal__title--contact">Let's have a chat!
+      </h3>
+      <form id="contact__form" action="">
+        <div class="form__item">
+          <label class="form__item--label">Name</label>
+          <input class="input" name="user_name" type="text" required></input>
+        </div>
+        <div class="form__item">
+          <label class="form__item--label">Email</label>
+          <input class="input" name="user_email" type="email" required></input>
+        </div>
+        <div class="form__item">
+          <label class="form__item--label">Message</label>
+          <textarea class="input" name="message" type="text" required></textarea>
+        </div>
+        <button class="contact__submit" class="form__submit">
+          Send it my way
+        </button>
+      </form>
+      <div class="modal__overlay modal__overlay--loading">
+        <i class="fas fa-spinner"></i>
+      </div>
+      <div class="modal__overlay modal__overlay--successs">
+        Thanks for the message! Looking forward to speaking with you soon.
+      </div>
+
+    </div>
    </div>
   </section>
     <section id="projects">
@@ -113,6 +144,27 @@
                         <div class="project__wrapper">
                         <img src="./assets/blinker mockup.png" class="project__img" alt="">
                         <div class="project__wrapper--background"></div>
+                        <div class="project__description">
+                            <h3 class="project__description--title">
+                                Treact Clone
+                            </h3>
+                            <h4 class="hr project__description--sub-title">
+                                HTML 5, CSS, JavaScript, REACT, Vue, Vuex
+                            </h4>
+                            <p class="project__description--para">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit Accusantium possimus aliquam animi optio hic laborum, 
+                                 esse quibusdam enim provident amet perferendis minima molestiae quae delectus, 
+                                 harum commodi distinctio suscipit molestias?
+                            </p>
+                            <div class="project__description--links">
+                                <a href="https://github.com/TroyCMason/React-Template-Clone" class="project__description--link">
+                                <i class="fab fa-github"></i>   
+                                </a>
+                                <a href="https://troycmason.github.io/React-Template-Clone/" class="project__description--link">
+                                    <i class="fas fa-link"></i>   
+                                    </a> 
+                            </div>
+                        </div>
                         <div class="project__description">
                             <h3 class="project__description--title">
                                 Treact Clone
