@@ -7,6 +7,7 @@
   font-family: 'Roboto', sans-serif;
 }
 
+
 html {
   scroll-behavior: smooth;
 }
@@ -32,6 +33,8 @@ section {
   background-color: rgb(245, 245, 245);
   transition: all 300ms ease;
 }
+
+
 
 input, textarea {
   width: 100%;
@@ -98,7 +101,7 @@ input:focus, textarea:focus {
 }
 
 .red {
-  color: #BC3F4A !important;
+  color:purple !important;
 }
 
 .link__hover-effect {
@@ -201,7 +204,7 @@ nav,
 }
 
 .social__link {
-  background-color: #BC3F4A;
+  background-color: purple;
   color: white;
   padding: 6px;
   width: 32px;
@@ -319,6 +322,7 @@ nav {
   width: 90%;
   max-width: 1100px;
   height: 700px;
+  box-shadow:0 20px 80px 0 rgb(0, 0, 0, 0.55);
   border-radius: 20px;
   overflow: hidden;
   display: flex;
@@ -532,7 +536,7 @@ nav {
   transform: translateY(100%);
   opacity: 0;
   transition: opacity 300ms, transform 450ms ease;
-  color:  purple ;
+  color:  purple;
   max-width: 550px;
 }
 
