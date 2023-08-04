@@ -6,10 +6,16 @@
     <title>Troy Mason</title>
     <link rel="stylesheet" href="style.css" />
     <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+    <script type ="text/javascript"   src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js" ></script>
+    <script type="text/javascript">
+      (function(){
+         emailjs.init("hIO4opuhMq6ALpGUR");
+      })();
+   </script>
   </head>
 
-  <body class="modal--open">
-    <section id="landing-page">
+  <body>
+    <section id="landing-page"  onmousemove="moveBackground(event)">
       <nav>
         <figure>
           <img id="personal-logo" src="./assets/logo.svg" alt="" />
@@ -36,7 +42,7 @@
               link__hover-effect--black
               ">Contact</a>
           </li>
-          <li class="nav__link click">
+          <li class="nav__link click" onclick="toggleContrast">
             <a href="#" class="
             nav__link--anchor
             link__hover-effect
@@ -76,7 +82,7 @@
     </a>
     <div class="modal">
     <div class="modal__half modal__about">
-      <h3 class="modal__title modal__title--about">Here's a bit about me.</h3>
+      <h3 class="modal__title modal__title--about">Here's a bit <b class="red click" onclick="toggleModal()">about me</b>.</h3>
       <h4 class="modal__sub-title modal__sub-title--about">Frontend Software Engineer</h4>
       <p class="modal__para">
         I am an Afro-Canadian <span class="red">Frontend Software Engineer</span> with a strong passion for developing websites with
@@ -120,8 +126,13 @@
       </div>
     </div>
     <div class="modal__half modal__contact">
-      <h3 class="modal__title modal__title--contact">Let's have a chat!
+      <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
+      <h3 class="modal__title modal__title--contact">
+        Let's have a chat!
       </h3>
+      <h4 class="modal__title modal__sub-title--contact">
+        I'd love to hear from you
+      </h4>
       <form id="contact__form" action="">
         <div class="form__item">
           <label class="form__item--label">Name</label>
@@ -145,7 +156,7 @@
       <div class="modal__overlay modal__overlay--successs">
         Thanks for the message! Looking forward to speaking with you soon.
       </div>
-
+      
     </div>
    </div>
   </section>
