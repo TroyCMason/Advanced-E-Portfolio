@@ -100,8 +100,8 @@ input:focus, textarea:focus {
   line-height: 1;
 }
 
-.red {
-  color:purple !important;
+.orange {
+  color:#d4af37 !important;
 }
 
 .link__hover-effect {
@@ -204,7 +204,7 @@ nav,
 }
 
 .social__link {
-  background-color: purple;
+  background-color: #d4af37;
   color: white;
   padding: 6px;
   width: 32px;
@@ -435,8 +435,8 @@ nav {
 }
 
 .form__submit:active {
-  border-color: #BC3F4A;
-  color: #BC3F4A;
+  border-color: gold;
+  color: gold;
 }
 
 .modal__overlay {
@@ -536,7 +536,7 @@ nav {
   transform: translateY(100%);
   opacity: 0;
   transition: opacity 300ms, transform 450ms ease;
-  color:  purple;
+  color:  gold;
   max-width: 550px;
 }
 
